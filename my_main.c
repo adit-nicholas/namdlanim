@@ -91,12 +91,12 @@ void first_pass() {
       base = 1;
     }
     if(!frame && vary){
-      printf("You messed up! You need to have frame with vary. Program is gonna exit now if that's cool with you, pal\n");
+      printf("No frames command found. This program will exit\n");
       exit(0);
     }
     else if(frame && !base){
       strcpy(name, "default");
-      printf("You messed up! But don't worry. Basename set to default\n");
+      printf("Basename set to default\n");
     }
     //if(frame){
       
@@ -390,7 +390,7 @@ void my_main() {
 	  break;
 	}
       char * s = malloc(sizeof(char ));;
-      sprintf(s, "./store/%03d",w);
+      sprintf(s, "./images/%03d",w);
       save_extension(t, s);
       printf("\n");
     }
